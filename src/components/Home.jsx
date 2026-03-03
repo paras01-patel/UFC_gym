@@ -1,4 +1,5 @@
 import formalImage from "../assets/formalll.jpeg";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,11 +13,11 @@ function Home() {
                 <span className="text-2xl underline ml-1">GYM</span></i>
             </h1>
             <ul className="flex space-x-8 font-medium">
-                <li><a href="#" className="hover:text-yellow-500">LOCATIONS</a></li>
-                <li><a href="#" className="hover:text-yellow-500">CLASSES</a></li>
-                <li><a href="#" className="hover:text-yellow-500">COACHING</a></li>
-                <li><a href="#" className="hover:text-yellow-500">ABOUT</a></li>
-                <li><a href="#" className="hover:text-yellow-500">NEWS</a></li>
+                <li><Link to="#" className="hover:text-yellow-500">LOCATIONS</Link></li>
+                <li><Link to="/Classes" className="hover:text-yellow-500">CLASSES</Link></li>
+                <li><Link to="/Coching" className="hover:text-yellow-500">COCHING</Link></li>
+                    <li><Link to="/About" className="hover:text-yellow-500">ABOUT</Link></li>
+                <li><Link to="/News" className="hover:text-yellow-500">NEWS</Link></li>
                 <li><a href="#" className="hover:text-yellow-500 bg-red-500">FREE PASS</a></li>
             </ul>
         </div>
