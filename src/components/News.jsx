@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function News(){
     return(
-
+    <div>
         <nav className="bg-gray-100 text-black w-full">
         <div className="px-8 py-4 flex justify-between items-center">
             <h1 className="font-extrabold"><i>
@@ -19,6 +19,6 @@ function News(){
             </ul>
         </div>
     </nav>
-    )
+    </div>    )
 }
 export default News

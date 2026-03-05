@@ -3,6 +3,10 @@ import gym2 from "../assets/gym2.jpg";
 import gym3 from "../assets/gym3.jpg";
 import daractor1 from "../assets/daractor1.jpg"
 import daractor2 from "../assets/daractor2.jpg"
+import david from "../assets/david.png"
+import pulll from "../assets/pulll.jpg"
+
+
 
 
 
@@ -30,11 +34,11 @@ function Coching(){
 
 
         <div className="w-full h-170 bg-cover bg-center flex flex-col items-center pt-50"style={{ backgroundImage: `url(${formalImage})` }}>
-            <h1 className="text-white text-5xl font-bold">
+            <h1 className="text-white text-6xl font-bold">
                 COCHING AT UFC GYM
             </h1>
 
-            <p className="text-white text-center mt-4">
+            <p className="text-white text-center text-2xl mt-4">
             With the right coach the impossible becomes possible. Maximize your potential with our <br />
             elite coaches. You'll be equipped with a program designed to meet your unique needs and <br />
             a partner who will push you to go further and go faster.
@@ -76,7 +80,7 @@ function Coching(){
                 <img src={gym3} alt="gym" />
             </div>
         </div>
-        <div className="w-full h-200 bg-sky-50 mt-5 pt-20">
+        <div className="w-full h-250 bg-sky-50 mt-5 pt-20">
             <div>
                 <h1 className="text-center text-4xl ">
                     WORLD CLASS PROGRAM DIRECTORS
@@ -88,18 +92,84 @@ function Coching(){
             </div>
             <div className="flex justify-center gap-10 items-center pt-10"> 
                 <div>
-                <img src={daractor1} alt="daractor1"  className="w-150"/>
+                <img src={daractor1} alt="daractor1"  className="w-150 h-150"/>
                 <h1 className="text-3xl">BRANDON BENDER</h1>
                 <h2 className="text-2xl">DIRECTOR, MMA</h2>
                 </div>
                 <div>
-                <img src={daractor2 } alt="daractor2"  className="w-150 h-99"/>
+                <img src={daractor2 } alt="daractor2"  className="w-150 h-150"/>
                 <h1 className="text-3xl">LAURA AIELLO</h1>
                 <h2 className="text-2xl">GLOBAL PROGRAM DIRECTOR</h2>
                 </div>
+            </div>
+            
+
+
+            <div className="flex">
+                <img src={daractor1 } alt="daractor1" className="w-60 h-60 mt-30 ml-100 rounded-full object-cover"/>
+                <p className="mt-40 ml-50 text-xl">
+                    “As a Youth Coach, there’s nothing better than seeing our kids <br />
+                    discover the benefits of MMA training. Seeing their confidence and <br />
+                    self-esteem grow, see them accomplishing goals and forging  <br />
+                    friendships.”
+                    <h1 className="text-3xl mt-5 ml-40">BRANDON BENDER</h1>
+                <h2 className="text-2xl mt- ml-40">DIRECTOR, MMA</h2>
+                </p>    
+            </div>
+
+            <div className="flex">
+                <img src={david } alt="david.png" className="w-70 h-70 mt-30 ml-100 rounded-full object-cover"/>
+                <p className="mt-40 ml-40 text-xl">
+                    “Whatever goal you have, whatever Train Different means for you, <br />
+                    we have a coach on staff that can support your success in pursuing <br />
+                    that goal.”
+                    <h1 className="text-3xl mt-5 ml-40">David Ingram</h1>
+                <h2 className="text-2xl mt- ml-5">Assistant Fitness Director, UFC GYM Costa Mesa</h2>
+                </p>    
             </div>            
         </div>
 
+        <div className="w-full h-80 bg-cover bg-center flex flex-col items-center mt-180"style={{ backgroundImage: `url(${pulll})` }}>
+            <h1 className="text-white text-6xl pt-20">TRAIN FOR FREE TODAY </h1>
+            <button className= "mt-10 bg-red-500 text-white px-6 py-3 font-bold border-2 border-red-500 hover:bg-white hover:text-red-500 transition">
+                GET YOUR FREE PASS
+            </button>
+        </div>
+
+        <footer className="bg-black mt-5 h-100 ">
+            <div className="px-8 py-4 flex justify-between items-center">
+                <h1 className="font-extrabold text-white"><i>
+                    <span className="text-5xl">UFC</span>
+                    <span className="text-2xl underline ml-1">GYM</span></i>
+                </h1>
+                <ul className="flex text-white space-x-8 font-medium">
+                    <li><a href="#" className="hover:text-yellow-500">OWN A GYM</a></li>
+                    <li><a href="#" className="hover:text-yellow-500">LOCATIONS</a></li>
+                    <li><a href="#" className="hover:text-yellow-500">INTERNATIONAL</a></li>
+                    <li><a href="#" className="hover:text-yellow-500">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <hr className="mt-4 text-white "/>
+            <div className="mt-8 flex">
+                <div className="flex">
+                    <ul className="text-white space-x-8 font-medium ml-100">
+                        <li><a href="https://www.instagram.com/ufcgymindia/" className="hover:text-yellow-500">INSTAGRAM</a></li><br />
+                        <li><a href="https://www.facebook.com/ufcgymindia" className="hover:text-yellow-500">FACEBOOK</a></li><br />
+                        <li><a href="https://www.youtube.com/ufcgymindia" className="hover:text-yellow-500">YOUTUBE</a></li><br />
+                        <li><a href="linkedin.com/company/ufcgymindia?originalSubdomain=in" className="hover:text-yellow-500">LINKDIN</a></li><br />
+                        <li><a href="https://x.com/ufcgymindia" className="hover:text-yellow-500">TWITTER</a></li>
+                    </ul>
+                </div>
+                <div className="flex mt-17">
+                    <ul className="text-white space-x-8 font-medium ml-100">
+                        <li><a href="#" className="hover:text-yellow-500">Privacy Policy</a></li><br />
+                        <li><a href="#" className="hover:text-yellow-500">Terms of Service</a></li><br />
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
     </div>
     
     )
