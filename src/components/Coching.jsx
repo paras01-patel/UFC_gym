@@ -3,8 +3,10 @@ import gym2 from "../assets/gym2.jpg";
 import gym3 from "../assets/gym3.jpg";
 import daractor1 from "../assets/daractor1.jpg"
 import daractor2 from "../assets/daractor2.jpg"
+import pullup from "../assets/pullup.webp"
 import david from "../assets/david.png"
-import pulll from "../assets/pulll.jpg"
+
+// import pulll from "../assets/pulll.jpg"
 
 
 
@@ -118,7 +120,7 @@ function Coching(){
             </div>
 
             <div className="flex">
-                <img src={david } alt="david.png" className="w-70 h-70 mt-30 ml-100 rounded-full object-cover"/>
+                <img src={david} alt="david.png" className="w-70 h-70 mt-30 ml-100 rounded-full object-cover"/>
                 <p className="mt-40 ml-40 text-xl">
                     “Whatever goal you have, whatever Train Different means for you, <br />
                     we have a coach on staff that can support your success in pursuing <br />
@@ -129,7 +131,7 @@ function Coching(){
             </div>            
         </div>
 
-        <div className="w-full h-80 bg-cover bg-center flex flex-col items-center mt-180"style={{ backgroundImage: `url(${pulll})` }}>
+        <div className="w-full h-80 bg-cover bg-center flex flex-col items-center mt-180"style={{ backgroundImage: `url(${pullup})` }}>
             <h1 className="text-white text-6xl pt-20">TRAIN FOR FREE TODAY </h1>
             <button className= "mt-10 bg-red-500 text-white px-6 py-3 font-bold border-2 border-red-500 hover:bg-white hover:text-red-500 transition">
                 GET YOUR FREE PASS
