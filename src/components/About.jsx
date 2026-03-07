@@ -4,6 +4,12 @@ import boxer from "../assets/boxer.webp"
 import bo2 from "../assets/bo2.jpg"
 import bo3 from "../assets/bo3.webp"
 import bo4 from "../assets/bo4.jpg"
+import about1 from "../assets/about1.png"
+import about2 from "../assets/about2.png"
+import about3 from "../assets/about3.png"
+import about4 from "../assets/about4.png"
+
+
 
 
 
@@ -110,7 +116,68 @@ function About(){
         </div>
     </div>
     
-        
+
+    <div>
+        <h1 className="text-center text-5xl mt-20">MISTER LICENESE - INDIA</h1>
+        <p className=" text-center text-xl mt-10">Artaxerxes Fitness & Lifestyle Pvt Ltd, led by master licensees Istayak Ansari and Farzad <br />
+        Palia, signed an exclusive partnership agreement with UFC GYM in June 2017 to open more <br />
+        than 100 gym locations throughout the Republic of India. UFC GYM is the first to combine <br />
+        martial arts, functional training, and traditional fitness. UFC GYM's 'Train Different' <br />
+        techniques create an experience that delivers immediate and lasting results in a safe and <br />
+        fun environment.</p>
+    </div>
+
+    <div className="flex">
+        <img src={about1} alt="about1.png" className="w-70 h-70 mt-30 ml-80 rounded-full object-cover"/>
+        <p className="mt-40 ml-20 text-xl">
+            “UFC GYM is for everyone who wants to have a place to work out <br />
+            and who is looking to change up what they do when they go to the <br /> gym.”
+            <h1 className="text-3xl mt-8 ml-50">Dana White </h1>
+        <h2 className="text-xl mt- ml-52">PRESEDENT UFC</h2>
+        </p>    
+    </div>
+
+    <div className="flex">
+        <img src={about2} alt="about2.png" className="w-70 h-70 mt-30 ml-80 rounded-full object-cover"/>
+        <p className="mt-40 ml-20 text-xl">
+            “Our members and coaches are the heart of our Train Different <br />
+            experience. It is so incredible that we’ve built this passionate UFC <br /> GYM community around the world.”
+            <h1 className="text-3xl mt-8 ml-50">Adam Sedlack </h1>
+        <h2 className="text-xl mt- ml-55">CEO, UFC GYM</h2>
+        </p>    
+    </div>
+
+    <div className="flex">
+        <img src={about3} alt="about3.png" className="w-70 h-70 mt-30 ml-80 rounded-full object-cover"/>
+        <p className="mt-40 ml-20 text-xl">
+        “The fitness market is booming in India and UFC GYM with its  <br />
+        unique TRAIN DIFFERENT® philosophy is a one-stop shop for all <br />
+            ages and athletic abilities.”
+            <h1 className="text-3xl mt-8 ml-50">Farzad Palia </h1>
+        <h2 className="text-xl mt- ml-40">CHAIRMAN, UFC GYM INIDA</h2>
+        </p>    
+    </div>
+
+    <div className="flex">
+        <img src={about4} alt="about4.png" className="w-70 h-70 mt-30 ml-80 rounded-full object-cover"/>
+        <p className="mt-40 ml-20 text-xl">
+            “At UFC GYM, we are building a supportive community of fitness <br />
+            enthusiasts who motivate each other to achieve their goals.”
+            <h1 className="text-3xl mt-8 ml-50">Istayak Ansari </h1>
+        <h2 className="text-xl mt- ml-15">FOUNDER & MANAGING DIRECTOR, UFC GYM INDIA</h2>
+        </p>    
+    </div>
+
+
+    <div>
+        <h1 className="text-center text-5xl mt-20">YOU BELONG HERE </h1>
+        <p className=" text-center text-xl mt-10">Experience MMA-inspired fitness in the workout environment that’s right for you. From our <br />Signature sized clubs to our more intimate mid-box clubs and boutique studios, find your fit.</p>
+    </div>
+    
+    <div className="flex justify-center mt-50">
+        <div><h1></h1></div>
+        <div><h1></h1></div>
+    </div>
 </div>
 
 
