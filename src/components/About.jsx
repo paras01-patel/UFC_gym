@@ -8,6 +8,9 @@ import about1 from "../assets/about1.png"
 import about2 from "../assets/about2.png"
 import about3 from "../assets/about3.png"
 import about4 from "../assets/about4.png"
+import about5 from "../assets/about5.jpg"
+import about6 from "../assets/about6.jpg"
+import pullup from "../assets/pullup.webp"
 
 
 
@@ -174,10 +177,130 @@ function About(){
         <p className=" text-center text-xl mt-10">Experience MMA-inspired fitness in the workout environment that’s right for you. From our <br />Signature sized clubs to our more intimate mid-box clubs and boutique studios, find your fit.</p>
     </div>
     
-    <div className="flex justify-center mt-50">
-        <div><h1></h1></div>
-        <div><h1></h1></div>
+    <div className="flex justify-center mt-50 gap-20 ">
+        <div><h1 className="font-extrabold text-8xl" ><i>
+                <span className="text-10xl">UFC</span>
+                <span className="text-5xl underline ml-1">GYM</span></i>
+            </h1>
+            <p className="text-xl mt-20"> 6,000+ Sq. Ft <br /> <br />
+Enjoy the ultimate gym experience at UFC GYM  <br />
+Signature Clubs.The typical Signature club is 6,000 to <br />
+8,000 sq. ft. With this much space, you’re sure to have <br />
+ access to the amenities and equipment you want. <br />
+ Standard offerings include strength training <br />
+ equipments, UFC-style Octagon, large bag rack, indoor <br />
+  turf, Brazilian jiu-jitsu mat area, Group Fitness studio, <br />
+  weight room, robust cardio equipment, steam and full <br />
+  -service locker rooms. Most Signature clubs offer a café <br />
+   and retail store and all offer a wide-range of fitness <br />
+   classes and Personal Training.</p>
+            </div>
+        <div><h1 className="font-extrabold text-8xl"><i>
+                <span className="text-10xl">UFC</span>
+                <span className="text-5xl underline ml-1">GYM</span></i>
+            </h1>
+
+            <p className="text-xl mt-20">
+                5,000+ Sq. Ft <br /> <br />
+                Our midsize UFC GYM locations offer every essential <br />
+                for your fitness training experience. Try a variety of <br />
+                fitness classes, including our core MMA-fitness classes, <br />
+                and tap into Personal Training opportunities with top <br />
+                -notch coaches. Typical club amenities include a boxing <br />
+                bag rack, indoor turf, free weights, cardio and strength <br />
+                training equipments.
+            </p>
+        </div>
     </div>
+
+    <div className="mt-20  bg-gray-200  ">
+        <h1 className="font-extrabold text-center text-blue-400 text-5xl font-sans pt-20 ">
+            CLASS UFC GYM
+        </h1>
+        <p className="text-center text-xl mt-10 pb-20">
+            Know what you want and want more of it? We hear you! These studios are a results-centric, <br />
+            class-based boutique model. Take 12 of our signature as well as group fitness classes. Then <br />
+            REPEAT.
+        </p>
+    </div>
+    
+
+    <div className="flex mt-10 ml-40" >
+        <div className="">
+            <img src={about5} alt="ab1"  className="w-150 h-90" />
+        </div>
+        <div className="text-center items-center ml-30"> 
+            <h1 className="font-bold mt-20 w-full text-2xl">
+                CLASS WORKOUTS
+            </h1>
+            <p className="mt-5 text-xl pr-2">
+            Transform your body with TWELVE distinct, invigorating and <br />
+            challenging class options. Each class is led by a top coach who will <br />
+            motivate you through all 50 minutes.
+            </p>
+        </div>
+    </div>
+
+        <div className="flex mt-10 " >
+        <div className="text-center items-center ml-40"> 
+            <h1 className="font-bold mt-20 w-full text-2xl">
+                WHY CLASS
+            </h1>
+            <p className="mt-5 text-xl pr-2 ml-2">
+                It’s the perfect package. CLASS was designed to remove <br />
+                the guesswork and ensure results. Achieve your goals and transform <br />
+                into a fitter, stronger, more confident version of yourself. Bored? Not <br />
+                here! The workouts constantly evolve.            
+            </p>
+                <i className="text-2xl mt-10 ">FIND OUT MORE</i> <br /> 
+            
+        </div>
+        <div className="ml-30">
+            <img src={about6} alt="about5"  className="w-150" />
+        </div>
+    </div>
+
+    <div className="w-full h-80 bg-cover bg-center flex flex-col items-center mt-1git 0"style={{ backgroundImage: `url(${pullup})` }}>
+                <h1 className="text-white text-6xl pt-20">TRAIN FOR FREE TODAY </h1>
+                <button className= "mt-10 bg-red-500 text-white px-6 py-3 font-bold border-2 border-red-500 hover:bg-white hover:text-red-500 transition">
+                    GET YOUR FREE PASS
+                </button>
+            </div>
+    
+            <footer className="bg-black mt-5 h-100 ">
+                <div className="px-8 py-4 flex justify-between items-center">
+                    <h1 className="font-extrabold text-white"><i>
+                        <span className="text-5xl">UFC</span>
+                        <span className="text-2xl underline ml-1">GYM</span></i>
+                    </h1>
+                    <ul className="flex text-white space-x-8 font-medium">
+                        <li><a href="#" className="hover:text-yellow-500">OWN A GYM</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">LOCATIONS</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">INTERNATIONAL</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">CONTACT</a></li>
+                        
+                    </ul>
+                </div>
+                <hr className="mt-4 text-white "/>
+                <div className="mt-8 flex">
+                    <div className="flex">
+                        <ul className="text-white space-x-8 font-medium ml-100">
+                            <li><a href="https://www.instagram.com/ufcgymindia/" className="hover:text-yellow-500">INSTAGRAM</a></li><br />
+                            <li><a href="https://www.facebook.com/ufcgymindia" className="hover:text-yellow-500">FACEBOOK</a></li><br />
+                            <li><a href="https://www.youtube.com/ufcgymindia" className="hover:text-yellow-500">YOUTUBE</a></li><br />
+                            <li><a href="linkedin.com/company/ufcgymindia?originalSubdomain=in" className="hover:text-yellow-500">LINKDIN</a></li><br />
+                            <li><a href="https://x.com/ufcgymindia" className="hover:text-yellow-500">TWITTER</a></li>
+                        </ul>
+                    </div>
+                    <div className="flex mt-17">
+                        <ul className="text-white space-x-8 font-medium ml-100">
+                            <li><a href="#" className="hover:text-yellow-500">Privacy Policy</a></li><br />
+                            <li><a href="#" className="hover:text-yellow-500">Terms of Service</a></li><br />
+                        </ul>
+                    </div>
+                </div>
+                
+            </footer>
 </div>
 
 
