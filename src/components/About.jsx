@@ -260,6 +260,49 @@ Signature Clubs.The typical Signature club is 6,000 to <br />
         </div>
     </div>
 
+    {/* WHY PEOPLE LOVE UFC GYM */}
+
+<div className="why-gym-section">
+
+<h1 className="why-title">
+WHY PEOPLE LOVE UFC GYM
+</h1>
+
+<p className="why-subtitle">
+Thousands of members trust UFC GYM to help them build strength,
+confidence and discipline through world-class training programs.
+</p>
+
+<div className="why-container">
+
+<div className="why-card">
+<h2>World Class Equipment</h2>
+<p>
+Train with modern strength machines, professional MMA gear
+and functional training zones designed for high performance workouts.
+</p>
+</div>
+
+<div className="why-card">
+<h2>Expert Trainers</h2>
+<p>
+Our certified coaches guide members with personalized training
+plans and expert support to help them reach their goals faster.
+</p>
+</div>
+
+<div className="why-card">
+<h2>Motivating Community</h2>
+<p>
+Join a community of dedicated athletes and fitness enthusiasts
+who push each other to improve every single day.
+</p>
+</div>
+
+</div>
+
+</div>
+
     <div className="w-full h-80 bg-cover bg-center flex flex-col items-center mt-1git 0"style={{ backgroundImage: `url(${pullup})` }}>
                 <h1 className="text-white text-6xl pt-20">TRAIN FOR FREE TODAY </h1>
                 <button className= "mt-10 bg-red-500 text-white px-6 py-3 font-bold border-2 border-red-500 hover:bg-white hover:text-red-500 transition">
