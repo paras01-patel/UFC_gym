@@ -19,13 +19,14 @@ return(
 </h1>
 
 <ul className="flex space-x-8 font-medium">
-<li><Link to="/">HOME</Link></li>
-<li><Link to="/Classes">CLASSES</Link></li>
-<li><Link to="/Coching">COACHING</Link></li>
-<li><Link to="/About">ABOUT</Link></li>
-<li><Link to="/News">NEWS</Link></li>
-</ul>
+                <li><Link to="#" className="hover:text-yellow-500">LOCATIONS</Link></li>
+                <li><Link to="/Classes" className="hover:text-yellow-500">CLASSES</Link></li>
+                <li><Link to="/Coching" className="hover:text-yellow-500">COCHING</Link></li>
+                <li><Link to="/About" className="hover:text-yellow-500">ABOUT</Link></li>
+                <li><Link to="/News" className="hover:text-yellow-500">NEWS</Link></li>
+                <li><Link to="/Login" className="hover:text-yellow-500">LOGIN</Link></li>
 
+            </ul>
 </div>
 </nav>
 
@@ -160,29 +161,40 @@ confidence.
 </div>
 
 
-{/* YOUR FOOTER */}
-
 <footer className="bg-black mt-5 h-100 ">
-
-<div className="px-8 py-4 flex justify-between items-center">
-
-<h1 className="font-extrabold text-white">
-<i>
-<span className="text-5xl">UFC</span>
-<span className="text-2xl underline ml-1">GYM</span>
-</i>
-</h1>
-
-<ul className="flex text-white space-x-8 font-medium">
-<li><a href="#" className="hover:text-yellow-500">OWN A GYM</a></li>
-<li><a href="#" className="hover:text-yellow-500">LOCATIONS</a></li>
-<li><a href="#" className="hover:text-yellow-500">INTERNATIONAL</a></li>
-<li><a href="#" className="hover:text-yellow-500">CONTACT</a></li>
-</ul>
-
-</div>
-
-</footer>
+                <div className="px-8 py-4 flex justify-between items-center">
+                    <h1 className="font-extrabold text-white"><i>
+                        <span className="text-5xl">UFC</span>
+                        <span className="text-2xl underline ml-1">GYM</span></i>
+                    </h1>
+                    <ul className="flex text-white space-x-8 font-medium">
+                        <li><a href="#" className="hover:text-yellow-500">OWN A GYM</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">LOCATIONS</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">INTERNATIONAL</a></li>
+                        <li><a href="#" className="hover:text-yellow-500">CONTACT</a></li>
+                        
+                    </ul>
+                </div>
+                <hr className="mt-4 text-white "/>
+                <div className="mt-8 flex">
+                    <div className="flex">
+                        <ul className="text-white space-x-8 font-medium ml-100">
+                            <li><a href="https://www.instagram.com/ufcgymindia/" className="hover:text-yellow-500">INSTAGRAM</a></li><br />
+                            <li><a href="https://www.facebook.com/ufcgymindia" className="hover:text-yellow-500">FACEBOOK</a></li><br />
+                            <li><a href="https://www.youtube.com/ufcgymindia" className="hover:text-yellow-500">YOUTUBE</a></li><br />
+                            <li><a href="linkedin.com/company/ufcgymindia?originalSubdomain=in" className="hover:text-yellow-500">LINKDIN</a></li><br />
+                            <li><a href="https://x.com/ufcgymindia" className="hover:text-yellow-500">TWITTER</a></li>
+                        </ul>
+                    </div>
+                    <div className="flex mt-17">
+                        <ul className="text-white space-x-8 font-medium ml-100">
+                            <li><a href="#" className="hover:text-yellow-500">Privacy Policy</a></li><br />
+                            <li><a href="#" className="hover:text-yellow-500">Terms of Service</a></li><br />
+                        </ul>
+                    </div>
+                </div>
+                
+            </footer>
 
 </div>
 
