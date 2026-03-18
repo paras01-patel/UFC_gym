@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 
 
 function Home() {
+     const savedUser = localStorage.getItem('userdata')
+            const user = savedUser ? JSON.parse(savedUser) : null  
     return (
+       
 <div>
+     
     <nav className="bg-gray-100 text-black w-full">
         <div className="px-8 py-4 flex justify-between items-center">
             <h1 className="font-extrabold"><i>
@@ -19,6 +23,15 @@ function Home() {
                     <li><Link to="/About" className="hover:text-yellow-500">ABOUT</Link></li>
                 <li><Link to="/News" className="hover:text-yellow-500">NEWS</Link></li>
                 <li><Link to="/Signup" className="hover:text-yellow-500">SIGNUP</Link></li>
+
+
+                {user ? (
+            <div className="flex gap-3 items-center">
+              <span>HI, {user.name.toUpperCase()}</span>
+            </div>
+          ) : (
+            <Link to="/Sign" className="hover:underline">SIGN IN</Link>
+          )}
 
             </ul>
         </div>

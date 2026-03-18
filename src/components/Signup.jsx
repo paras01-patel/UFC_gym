@@ -4,39 +4,48 @@ import { toast, ToastContainer } from "react-toastify";
 
 function Signup() {
 
-  const [sign, set] = useState({
+const [sign, set] = useState({
     name: "",
     email: "",
     password: "",
     confirm_password: "",
-  });
+});
 
-  const navigate = useNavigate();
+const navigate = useNavigate();
 
-  function inputdata(e) {
+function inputdata(e) {
     const { name, value } = e.target;
     set({ ...sign, [name]: value });
-  }
+}
 
-  function handleSubmit(e) {
+function handleSubmit(e) {
     e.preventDefault();
 
     if (!sign.name || !sign.email || !sign.password || !sign.confirm_password) {
-      toast.error("All fields required ");
-      return;
+        toast.error("All fields required ");
+        return;
     }
 
     if (sign.password !== sign.confirm_password) {
-      toast.error("Password not match ");
-      return;
+        toast.error("Password not match ");
+        return;
     }
+
+
+    const userData = {
+        name: sign.name,
+        email: sign.email,
+        password: sign.password
+    };
+
+    localStorage.setItem("user", JSON.stringify(userData));
 
     toast.success("Signup Successful ");
 
-    console.log(sign);
+    console.log(userData);
 
     setTimeout(() => {
-    navigate("/login");
+        navigate("/login");
     }, 1500);
 }
 
@@ -52,7 +61,7 @@ return (
             Sign Up
         </h1>
 
-        {/* Full Name */}
+        
         <div className="mb-4">
             <label className="block mb-1 font-medium">Full Name</label>
             <input
@@ -73,7 +82,7 @@ return (
             name="email"
             placeholder="Enter your email"
             className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
-          />
+        />
         </div>
 
         {/* Password */}
@@ -87,7 +96,7 @@ return (
             className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400" />
         </div>
 
-        {/* Confirm Password */}
+        
         <div className="mb-6">
             <label className="block mb-1 font-medium">Confirm Password</label>
             <input
@@ -99,7 +108,6 @@ return (
         />
         </div>
 
-        {/* Button */}
         <button 
         type="submit"
         className="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-white hover:text-red-600 border border-red-600 transition"
@@ -107,7 +115,7 @@ return (
         Sign Up
         </button>
 
-        {/* Login Link */}
+    
         <p className="text-center text-sm mt-4 text-gray-600">
         Already have an account?{" "}
         <span 
@@ -115,7 +123,7 @@ return (
             className="text-red-600 cursor-pointer"
         >
             Login
-            </span>
+        </span>
         </p>
 
     </form>
@@ -126,11 +134,3 @@ return (
 }
 
 export default Signup;
-
-
-
-
-
-
-
-
