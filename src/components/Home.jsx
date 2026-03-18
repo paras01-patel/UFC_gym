@@ -18,7 +18,7 @@ function Home() {
                 <li><Link to="/Coching" className="hover:text-yellow-500">COCHING</Link></li>
                     <li><Link to="/About" className="hover:text-yellow-500">ABOUT</Link></li>
                 <li><Link to="/News" className="hover:text-yellow-500">NEWS</Link></li>
-                <li><Link to="/Login" className="hover:text-yellow-500">LOGIN</Link></li>
+                <li><Link to="/Signup" className="hover:text-yellow-500">SIGNUP</Link></li>
 
             </ul>
         </div>
